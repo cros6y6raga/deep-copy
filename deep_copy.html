@@ -62,7 +62,6 @@
     };
 
     let man3FullCopy = {...man3, ...man3.friends.map(el => el)} //  your code
-    console.log(man3FullCopy)
 
 
     // 7 Object inside an object, inside an object
@@ -79,8 +78,8 @@
         }
     };
 
-    let man4FullCopy //  your code
-
+    let man4FullCopy = {...man4, ...man4.mother.work} //  your code
+    console.log(man4FullCopy)
     // 8 Array of objects inside object -> object
     let man5 = {
         name: 'John',
