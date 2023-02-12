@@ -79,7 +79,7 @@
     };
 
     let man4FullCopy = {...man4, ...man4.mother.work} //  your code
-    console.log(man4FullCopy)
+
     // 8 Array of objects inside object -> object
     let man5 = {
         name: 'John',
@@ -98,8 +98,8 @@
         }
     };
 
-    let man5FullCopy //  your code
-
+    let man5FullCopy = {...man5, ...man5.mother, ...man5.mother.parents.map(el => el)} //  your code
+    console.log(man5FullCopy)
 
     // 9 Object inside an object -> array -> object ->  object
     let man6 = {
